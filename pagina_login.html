@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Prestsy - Iniciar Sesion</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+		<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+		<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+		<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+		<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+
+		<script type="text/javascript" src="assets/js/core/app.js"></script>
+	</head>
+	<body class="login-container">
+		<div class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<a class="navbar-brand" style="padding-top:8px;" href="index.html"><img src="images/logow.png" style="height:28px;" alt=""></a>
+
+				<ul class="nav navbar-nav pull-right visible-xs-block">
+					<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="page-container">
+			<div class="page-content">
+				<div class="content-wrapper">
+
+					<form action="#">
+						<div class="panel panel-body login-form">
+							<div class="text-center">
+								<div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
+								<h5 class="content-group">Iniciar Sesi&oacute;n <small class="display-block">Digita tus datos de acceso</small></h5>
+							</div>
+
+							<div class="form-group has-feedback has-feedback-left">
+								<input type="text" id="user" class="form-control" placeholder="Usuario">
+								<div class="form-control-feedback">
+									<i class="icon-user text-muted"></i>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback has-feedback-left">
+								<input id="pass" type="password" class="form-control" placeholder="Contrase&ntilde;a">
+								<div class="form-control-feedback">
+									<i class="icon-lock2 text-muted"></i>
+								</div>
+							</div>
+							<div id="error_user" class="text-danger text-center"></div>
+							<div class="form-group no-margin-bottom">
+								<button type="button" onclick="logear()" class="btn btn-primary btn-block">Entrar <i class="spinicon icon-spinner2 spinner hide"></i><i class="goicon icon-circle-right2 position-right"></i></button>
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer text-muted text-center">
+			&copy; 2025. <a href="#">Prestsy </a> Desarrollado Por <a href="http://softcoder.net" target="_blank">Softcoder</a>
+		</div>
+		<script>
+
+			function logear(){
+				var Err=0;
+				if($("#user").val()=="")
+				{
+					$("#user").parent().addClass("has-error");
+					Err=1;
+				}
+				if($("#pass").val()=="")
+				{
+					$("#pass").parent().addClass("has-error");
+					Err=1;
+				}
+				if(Err==1){ return false; }
+				$(".spinicon").removeClass("hide");
+				$(".goicon").addClass("hide");
+				
+				$.ajax({
+					url : "logear.php",
+					type: "POST",
+					timeout: 30000,
+					error: function(){
+						$("#error_user").html("Lo sentimos se ha producido un error intente nuevamente...."); 
+						$(".spinicon").addClass("hide");
+						$(".goicon").removeClass("hide");
+					},
+					data: "user="+$("#user").val()+"&pass="+$("#pass").val(),
+					success: function(a){
+						if(a.c=="1" || a == "{\"c\":\"1\"}"){
+							$("#cargando").fadeOut("fast");
+
+							//EN CASo DE QUE LA RESPUESTA SEA SI ESTA LOGEADO
+							window.location="panel.php";
+						}else{
+							$(".spinicon").addClass("hide");
+							$(".goicon").removeClass("hide");
+							$("#error_user").html("Usuario o Clave Incorrecto");
+
+						}
+
+					}
+				});	
+			}
+			$("#pass").keypress(function(key){
+				if(key.which==13){
+					logear();
+				}	
+
+			});
+		</script>
+	</body>
+</html>
+
+
+
+

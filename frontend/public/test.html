@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba - Sistema de Préstamos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2563eb; }
+        .status { 
+            background: #dcfce7; 
+            border: 1px solid #16a34a; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+        }
+        .info {
+            background: #dbeafe;
+            border: 1px solid #2563eb;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Sistema de Préstamos</h1>
+        
+        <div class="status">
+            <h3>✅ Estado del Sistema</h3>
+            <ul>
+                <li>Servidor frontend funcionando</li>
+                <li>Puerto 3001 accesible</li>
+                <li>Conectividad establecida</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>📋 Información del Sistema</h3>
+            <p><strong>Frontend:</strong> http://159.203.69.59:3001</p>
+            <p><strong>Backend API:</strong> http://159.203.69.59:5000</p>
+            <p><strong>Estado:</strong> <span style="color: green;">✅ FUNCIONANDO</span></p>
+        </div>
+
+        <h3>🔐 Credenciales de Prueba</h3>
+        <ul>
+            <li><strong>Admin:</strong> admin@demo.com / admin123</li>
+            <li><strong>Cobrador:</strong> cobrador@demo.com / cobrador123</li>
+        </ul>
+
+        <button onclick="testAPI()">Probar Conexión API</button>
+        <button onclick="location.reload()">Recargar Página</button>
+
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        async function testAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<p>Probando conexión...</p>';
+            
+            try {
+                const response = await fetch('http://159.203.69.59:5000/');
+                const data = await response.json();
+                
+                resultDiv.innerHTML = `
+                    <div style="background: #dcfce7; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                        <h4>✅ API Conectada</h4>
+                        <p><strong>Mensaje:</strong> ${data.message}</p>
+                        <p><strong>Versión:</strong> ${data.version}</p>
+                    </div>
+                `;
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div style="background: #fecaca; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                        <h4>❌ Error de Conexión</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Información del sistema
+        console.log('Sistema de Préstamos - Diagnóstico');
+        console.log('Frontend URL:', window.location.href);
+        console.log('Timestamp:', new Date().toISOString());
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+nohup: ignoring input
+
+> prestasy-kr-backend@1.0.0 start
+> node server.js
+
+{"timestamp":"2025-10-05T06:53:32.169Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:53:32.228Z","level":"INFO","message":"MongoDB conectado exitosamente"}

@@ -1,0 +1,52 @@
+{
+  "login": {
+    "titulo": "Prestsy - Iniciar Sesion",
+    "logo": "images/logow.png",
+    "campos": [
+      {
+        "id": "user",
+        "type": "text",
+        "placeholder": "Usuario",
+        "class": "form-control"
+      },
+      {
+        "id": "pass",
+        "type": "password",
+        "placeholder": "Contraseña",
+        "class": "form-control"
+      }
+    ],
+    "scripts": [],
+    "estilos": []
+  },
+  "panel": {
+    "titulo": "Prestsy - Iniciar Sesion",
+    "navegacion": [],
+    "modulos": [],
+    "dashboard": {
+      "cards": [],
+      "tablas": [],
+      "graficos": []
+    }
+  },
+  "navegacion": [],
+  "modulos": {},
+  "archivosCSS": [
+    "https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900",
+    "assets/css/icons/icomoon/styles.css",
+    "assets/css/bootstrap.css",
+    "assets/css/core.css",
+    "assets/css/components.css",
+    "assets/css/colors.css"
+  ],
+  "archivosJS": [
+    "assets/js/plugins/loaders/pace.min.js",
+    "assets/js/core/libraries/jquery.min.js",
+    "assets/js/core/libraries/bootstrap.min.js",
+    "assets/js/plugins/loaders/blockui.min.js",
+    "assets/js/plugins/ui/nicescroll.min.js",
+    "assets/js/plugins/ui/drilldown.js",
+    "assets/js/core/app.js"
+  ],
+  "estructura": {}
+}

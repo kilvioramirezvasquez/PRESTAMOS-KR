@@ -1,0 +1,285 @@
+{
+  "informacionGeneral": {
+    "empresa": "Inversiones Marcos",
+    "codigo": "invmarcos / invmarcos_local",
+    "usuario": "marcos",
+    "sitioWeb": "invmarcos.ddns.net",
+    "servidorAPI": "prestamov2.ddns.net:8000"
+  },
+  "baseDatos": {
+    "principal": {
+      "nombre": "prestamos_invmarcos",
+      "host": "prestamov2.ddns.net",
+      "puerto": 3306,
+      "usuario": "p_invmarcos"
+    },
+    "local": {
+      "nombre": "prestamos_invmarcos",
+      "host": "localhost",
+      "puerto": 3306,
+      "usuario": "p_invmarcos_app"
+    }
+  },
+  "modulos": [
+    {
+      "nombre": "Préstamos",
+      "descripcion": "Gestión de préstamos y créditos",
+      "url": "/prestamos.php",
+      "icono": "CreditCard",
+      "funcionalidades": [
+        "Crear nuevo préstamo",
+        "Consultar préstamos activos",
+        "Calcular intereses",
+        "Programar pagos",
+        "Historial de préstamos"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Clientes",
+      "descripcion": "Administración de clientes asignados",
+      "url": "/clientes.php",
+      "icono": "Users",
+      "funcionalidades": [
+        "Registro de clientes",
+        "Consulta de información",
+        "Asignación de cobradores",
+        "Historial crediticio",
+        "Documentos del cliente"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Cobradores",
+      "descripcion": "Gestión de cobradores y rutas",
+      "url": "/cobradores.php",
+      "icono": "UserCheck",
+      "funcionalidades": [
+        "Gestión de cobradores",
+        "Asignación de rutas",
+        "Control de rendimiento",
+        "Comisiones",
+        "Reportes de cobro"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Pagos Realizados",
+      "descripcion": "Registro de pagos y transacciones",
+      "url": "/pagos.php",
+      "icono": "DollarSign",
+      "funcionalidades": [
+        "Registro de pagos",
+        "Consulta de transacciones",
+        "Recibos de pago",
+        "Estados de cuenta",
+        "Conciliación bancaria"
+      ],
+      "estado": "desconocido"
+    },
+    {
+      "nombre": "Cobros Pendientes",
+      "descripcion": "Control de cobros por realizar",
+      "url": "/cobros.php",
+      "icono": "AlertCircle",
+      "funcionalidades": [
+        "Lista de cobros pendientes",
+        "Programación de visitas",
+        "Seguimiento de morosos",
+        "Notificaciones automáticas",
+        "Estrategias de cobranza"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Recargas",
+      "descripcion": "Sistema de recargas telefónicas",
+      "url": "/recargas.php",
+      "icono": "Globe",
+      "funcionalidades": [
+        "Recargas telefónicas",
+        "Consulta de saldo",
+        "Historial de recargas",
+        "Comisiones por recarga",
+        "Reportes de ventas"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Solicitudes de Préstamos",
+      "descripcion": "Nuevas solicitudes",
+      "url": "/solicitudes.php",
+      "icono": "FileText",
+      "funcionalidades": [
+        "Recepción de solicitudes",
+        "Evaluación crediticia",
+        "Documentación requerida",
+        "Aprobación/Rechazo",
+        "Seguimiento del proceso"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Sincronización",
+      "descripcion": "Sincronización de datos",
+      "url": "/sync.php",
+      "icono": "Server",
+      "funcionalidades": [
+        "Sincronización automática",
+        "Backup de datos",
+        "Resolución de conflictos",
+        "Logs de sincronización",
+        "Monitoreo de estado"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Configuración",
+      "descripcion": "Configuración del sistema",
+      "url": "/configuracion.php",
+      "icono": "Settings",
+      "funcionalidades": [
+        "Parámetros del sistema",
+        "Configuración de usuarios",
+        "Tasas de interés",
+        "Configuración de reportes",
+        "Respaldos automáticos"
+      ],
+      "estado": "inactivo"
+    },
+    {
+      "nombre": "Dashboard",
+      "descripcion": "Panel principal del sistema",
+      "url": "/dashboard.php",
+      "icono": "LayoutDashboard",
+      "funcionalidades": [
+        "Resumen general",
+        "Estadísticas principales",
+        "Alertas y notificaciones",
+        "Accesos rápidos",
+        "Gráficos de rendimiento"
+      ],
+      "estado": "inactivo"
+    }
+  ],
+  "paginasEncontradas": [
+    {
+      "url": "/",
+      "status": 200,
+      "titulo": "Prestsy - Iniciar Sesion",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "/login.php",
+      "status": 200,
+      "titulo": "Prestsy - Iniciar Sesion",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "/index.php",
+      "status": 200,
+      "titulo": "Prestsy - Iniciar Sesion",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "/panel.php",
+      "status": 200,
+      "titulo": "Prestsy - Iniciar Sesion",
+      "contentType": "text/html; charset=UTF-8"
+    }
+  ],
+  "paginasNoEncontradas": [
+    {
+      "url": "/dashboard.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/main.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/home.php",
+      "error": "timeout of 15000ms exceeded"
+    },
+    {
+      "url": "/admin.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/clientes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/prestamos.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobros.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobradores.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/usuarios.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/reportes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/configuracion.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cliente.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/prestamo.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobro.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobrador.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/recargas.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/solicitudes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/sync.php",
+      "status": 404,
+      "error": "Not Found"
+    }
+  ],
+  "fechaAnalisis": "2025-10-04T22:12:42.003Z",
+  "estadoConexion": "conectado",
+  "tiempoAnalisis": "15.24 segundos"
+}

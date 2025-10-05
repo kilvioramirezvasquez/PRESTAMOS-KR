@@ -1,0 +1,339 @@
+import React, { useState, useEffect } from 'react';
+import { 
+  Users, 
+  CreditCard, 
+  DollarSign, 
+  TrendingUp,
+  UserPlus,
+  BarChart3,
+  Calendar,
+  AlertCircle,
+  CheckCircle
+} from 'lucide-react';
+import axios from 'axios';
+
+interface DashboardStats {
+  totalClientes: number;
+  totalPrestamos: number;
+  montoTotal: number;
+  cobrosHoy: number;
+  clientesActivos: number;
+  prestamosActivos: number;
+  morosidad: number;
+  ingresosMes: number;
+}
+
+const DashboardPrestasy: React.FC = () => {
+  const [stats, setStats] = useState<DashboardStats>({
+    totalClientes: 36,
+    totalPrestamos: 10,
+    montoTotal: 150000,
+    cobrosHoy: 5,
+    clientesActivos: 34,
+    prestamosActivos: 8,
+    morosidad: 15,
+    ingresosMes: 25000
+  });
+  const [loading, setLoading] = useState(false);
+
+  const formatCurrency = (amount: number) => {
+    return new Intl.NumberFormat('es-ES', {
+      style: 'currency',
+      currency: 'EUR'
+    }).format(amount);
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+        <div className="animate-pulse">
+          <div className="h-8 bg-gray-300 rounded w-64 mb-6"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[1,2,3,4,5,6,7,8].map(i => (
+              <div key={i} className="h-32 bg-gray-300 rounded"></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6">
+      {/* Header Prestasy Style */}
+      <div className="mb-8">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-800 mb-2">
+              Dashboard <span className="text-blue-600">Prestasy-KR</span>
+            </h1>
+            <p className="text-gray-600 text-lg">
+              Sistema de Gestión de Préstamos - Panel de Control
+            </p>
+          </div>
+          <div className="text-right">
+            <div className="text-sm text-gray-500">
+              {new Date().toLocaleDateString('es-ES', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+              })}
+            </div>
+            <div className="text-lg font-semibold text-gray-700">
+              {new Date().toLocaleTimeString('es-ES')}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Grid - Estilo Prestasy */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {/* Total Clientes */}
+        <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg">
+          <div className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-blue-100 text-sm font-medium uppercase tracking-wider">
+                  Total Clientes
+                </p>
+                <p className="text-3xl font-bold mt-2">
+                  {stats.totalClientes}
+                </p>
+                <p className="text-blue-100 text-sm mt-1">
+                  Activos: {stats.clientesActivos}
+                </p>
+              </div>
+              <div className="bg-white bg-opacity-20 p-3 rounded-full">
+                <Users className="h-8 w-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Total Préstamos */}
+        <div className="bg-gradient-to-r from-green-500 to-green-600 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg">
+          <div className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-green-100 text-sm font-medium uppercase tracking-wider">
+                  Préstamos
+                </p>
+                <p className="text-3xl font-bold mt-2">
+                  {stats.totalPrestamos}
+                </p>
+                <p className="text-green-100 text-sm mt-1">
+                  Activos: {stats.prestamosActivos}
+                </p>
+              </div>
+              <div className="bg-white bg-opacity-20 p-3 rounded-full">
+                <CreditCard className="h-8 w-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Monto Total */}
+        <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg">
+          <div className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-purple-100 text-sm font-medium uppercase tracking-wider">
+                  Monto Total
+                </p>
+                <p className="text-2xl font-bold mt-2">
+                  {formatCurrency(stats.montoTotal)}
+                </p>
+                <p className="text-purple-100 text-sm mt-1">
+                  En circulación
+                </p>
+              </div>
+              <div className="bg-white bg-opacity-20 p-3 rounded-full">
+                <DollarSign className="h-8 w-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Cobros Hoy */}
+        <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg">
+          <div className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-orange-100 text-sm font-medium uppercase tracking-wider">
+                  Cobros Hoy
+                </p>
+                <p className="text-3xl font-bold mt-2">
+                  {stats.cobrosHoy}
+                </p>
+                <p className="text-orange-100 text-sm mt-1">
+                  {formatCurrency(stats.ingresosMes)}
+                </p>
+              </div>
+              <div className="bg-white bg-opacity-20 p-3 rounded-full">
+                <TrendingUp className="h-8 w-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Actions Grid - Estilo Prestasy */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 rounded-lg">
+          <div className="p-6 text-center">
+            <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <UserPlus className="h-8 w-8 text-blue-600" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Nuevo Cliente</h3>
+            <p className="text-gray-600 text-sm mb-4">Registrar nuevo cliente</p>
+            <button 
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+              onClick={() => window.location.href = '/clientes?action=new'}
+            >
+              Crear Cliente
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 rounded-lg">
+          <div className="p-6 text-center">
+            <div className="bg-green-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <CreditCard className="h-8 w-8 text-green-600" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Nuevo Préstamo</h3>
+            <p className="text-gray-600 text-sm mb-4">Otorgar nuevo préstamo</p>
+            <button 
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+              onClick={() => window.location.href = '/prestamos?action=new'}
+            >
+              Crear Préstamo
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 rounded-lg">
+          <div className="p-6 text-center">
+            <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <DollarSign className="h-8 w-8 text-purple-600" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Registrar Cobro</h3>
+            <p className="text-gray-600 text-sm mb-4">Procesar pago</p>
+            <button 
+              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+              onClick={() => window.location.href = '/cobros?action=new'}
+            >
+              Registrar Cobro
+            </button>
+          </div>
+        </div>
+
+        <div className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 rounded-lg">
+          <div className="p-6 text-center">
+            <div className="bg-orange-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <BarChart3 className="h-8 w-8 text-orange-600" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Reportes</h3>
+            <p className="text-gray-600 text-sm mb-4">Ver estadísticas</p>
+            <button 
+              className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-md transition-colors duration-200"
+              onClick={() => window.location.href = '/reportes'}
+            >
+              Ver Reportes
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Stats - Estado del Sistema */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white border-0 shadow-lg rounded-lg">
+          <div className="p-4 pb-3">
+            <h3 className="text-lg text-gray-800 flex items-center font-semibold">
+              <AlertCircle className="h-5 w-5 text-red-500 mr-2" />
+              Morosidad
+            </h3>
+          </div>
+          <div className="p-4 pt-0">
+            <div className="text-3xl font-bold text-red-600 mb-2">
+              {stats.morosidad}%
+            </div>
+            <p className="text-gray-600 text-sm">
+              Préstamos con pagos atrasados
+            </p>
+            <div className="mt-4">
+              <div className="bg-gray-200 rounded-full h-2">
+                <div 
+                  className="bg-red-500 h-2 rounded-full transition-all duration-300"
+                  style={{ width: `${Math.min(stats.morosidad, 100)}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-0 shadow-lg rounded-lg">
+          <div className="p-4 pb-3">
+            <h3 className="text-lg text-gray-800 flex items-center font-semibold">
+              <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+              Efectividad
+            </h3>
+          </div>
+          <div className="p-4 pt-0">
+            <div className="text-3xl font-bold text-green-600 mb-2">
+              {100 - stats.morosidad}%
+            </div>
+            <p className="text-gray-600 text-sm">
+              Préstamos al día
+            </p>
+            <div className="mt-4">
+              <div className="bg-gray-200 rounded-full h-2">
+                <div 
+                  className="bg-green-500 h-2 rounded-full transition-all duration-300"
+                  style={{ width: `${100 - stats.morosidad}%` }}
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-0 shadow-lg rounded-lg">
+          <div className="p-4 pb-3">
+            <h3 className="text-lg text-gray-800 flex items-center font-semibold">
+              <Calendar className="h-5 w-5 text-blue-500 mr-2" />
+              Este Mes
+            </h3>
+          </div>
+          <div className="p-4 pt-0">
+            <div className="text-2xl font-bold text-blue-600 mb-2">
+              {formatCurrency(stats.ingresosMes)}
+            </div>
+            <p className="text-gray-600 text-sm">
+              Ingresos del mes actual
+            </p>
+            <div className="mt-4 flex items-center">
+              <TrendingUp className="h-4 w-4 text-green-500 mr-1" />
+              <span className="text-green-500 text-sm font-medium">
+                +12.5% vs mes anterior
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Prestasy Style */}
+      <div className="mt-12 text-center">
+        <div className="bg-white rounded-lg shadow-sm p-6">
+          <p className="text-gray-600 mb-2">
+            © 2025. <strong className="text-blue-600">Prestasy-KR</strong> - Sistema de Gestión de Préstamos
+          </p>
+          <p className="text-gray-500 text-sm">
+            Desarrollado con ❤️ para una mejor gestión financiera
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DashboardPrestasy;

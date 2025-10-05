@@ -1,0 +1,3 @@
+nohup: ignoring input
+{"timestamp":"2025-10-05T04:16:41.503Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T04:16:41.544Z","level":"INFO","message":"MongoDB conectado exitosamente"}

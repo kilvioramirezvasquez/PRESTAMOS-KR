@@ -1,0 +1,21 @@
+{
+    "db": "prestamos_ramirez123",
+    "db_host": "invmarcos.ddns.net",
+    "db_user": "root",
+    "db_password": "asdf741!",
+    "db_port": "3306",
+    "host": "localhost",
+    "port": "8000",
+
+    "user_id": "14491",
+	"user_password" : "wsxkilvio",
+
+    "account_id" : "OPT",
+    "hash" : "OPT",
+
+    "recarga_minima": 30,
+    "recarga_maxima": 1500,
+    "recarga_tiempo": 300,
+
+    "token": "EFICTEC"
+}

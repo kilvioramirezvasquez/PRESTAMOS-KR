@@ -1,0 +1,129 @@
+{"timestamp":"2025-10-04T06:43:32.204Z","level":"INFO","message":"Servidor corriendo en puerto 5000","port":"5000"}
+{"timestamp":"2025-10-04T06:43:32.238Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:04:55.901Z","level":"INFO","message":"Servidor corriendo en puerto 5000","port":"5000"}
+{"timestamp":"2025-10-04T15:04:55.930Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:06:30.124Z","level":"INFO","message":"Servidor corriendo en puerto 5000","port":"5000"}
+{"timestamp":"2025-10-04T15:06:30.158Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:07:04.464Z","level":"INFO","message":"Servidor corriendo en puerto 5000","port":"5000"}
+{"timestamp":"2025-10-04T15:07:04.493Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:08:50.256Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T15:08:50.285Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:09:26.815Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T15:09:26.837Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:10:25.568Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T15:10:25.589Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:41:05.150Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T15:41:05.184Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T15:42:28.641Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T15:42:28.664Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T19:59:44.344Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T19:59:44.370Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T22:22:56.000Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T22:22:56.042Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-04T23:23:30.812Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-04T23:23:30.836Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T01:22:10.850Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T01:22:10.873Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T01:24:59.783Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T01:24:59.813Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T02:44:37.708Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T02:44:37.734Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T03:14:59.108Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T03:14:59.136Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T03:15:57.988Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T03:15:58.012Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T04:08:53.048Z","level":"INFO","message":"Contraseña cambiada para usuario: miguel@demo.com","usuarioId":"68e13f9468783b2cf815691a","cambiadaPor":"68e1c72ca76b85d3bb07ad60"}
+{"timestamp":"2025-10-05T04:16:41.503Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T04:16:41.544Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T04:50:43.718Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T04:50:43.746Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:20:36.721Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:20:36.745Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:21:13.865Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:21:13.888Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:24:20.130Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:24:20.159Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:26:46.249Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:26:46.270Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:27:16.018Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5001","host":"0.0.0.0","port":"5001"}
+{"timestamp":"2025-10-05T05:27:16.039Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:30:28.561Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:30:28.602Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:39:51.456Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:39:51.485Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:40:29.614Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:40:29.637Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:41:00.051Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:41:00.084Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:41:29.780Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:41:29.852Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:42:49.139Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:42:49.160Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:43:54.056Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:43:54.082Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:44:26.918Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:44:26.943Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:45:10.977Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:45:11.000Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:47:00.295Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:47:00.322Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:48:48.620Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:48:48.645Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:51:13.296Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:51:13.324Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T05:53:46.226Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T05:53:46.250Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:05:22.556Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:05:22.582Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:07:46.201Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:07:46.228Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:22:42.130Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:22:42.217Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:24:58.517Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:24:58.583Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:30:51.598Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:30:51.622Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:32:23.200Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:32:23.228Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:33:15.359Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:33:15.386Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:34:12.981Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:34:13.021Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:35:20.016Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:35:20.084Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:36:27.964Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:36:28.156Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:37:54.846Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:37:54.888Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:38:52.203Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:38:52.268Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:41:03.855Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:41:03.924Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:43:22.586Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:43:22.760Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:45:50.530Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:45:52.992Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:50:43.222Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:50:43.299Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T06:53:32.169Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T06:53:32.228Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T13:05:20.458Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T13:05:20.488Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T13:11:11.849Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T13:11:11.877Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T13:30:46.740Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T13:30:46.762Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T13:58:13.322Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T13:58:13.363Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T16:21:31.427Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T16:21:31.451Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T18:07:09.173Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T18:07:09.198Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T18:13:46.490Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T18:13:46.509Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T18:14:40.610Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T18:14:40.632Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T18:15:53.725Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T18:15:53.747Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T18:19:28.555Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T18:19:28.582Z","level":"INFO","message":"MongoDB conectado exitosamente"}

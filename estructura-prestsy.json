@@ -1,0 +1,177 @@
+{
+  "paginasExistentes": [
+    {
+      "url": "/",
+      "status": 200,
+      "size": 4534,
+      "contentType": "text/html; charset=UTF-8",
+      "titulo": "Prestsy - Iniciar Sesion"
+    },
+    {
+      "url": "/index.php",
+      "status": 200,
+      "size": 4534,
+      "contentType": "text/html; charset=UTF-8",
+      "titulo": "Prestsy - Iniciar Sesion"
+    },
+    {
+      "url": "/login.php",
+      "status": 200,
+      "size": 4534,
+      "contentType": "text/html; charset=UTF-8",
+      "titulo": "Prestsy - Iniciar Sesion"
+    }
+  ],
+  "paginasNoEncontradas": [
+    {
+      "url": "/dashboard.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/main.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/home.php",
+      "error": "timeout of 5000ms exceeded"
+    },
+    {
+      "url": "/admin.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/clientes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/prestamos.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobros.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobradores.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/usuarios.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/reportes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/configuracion.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cliente.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/prestamo.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobro.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/cobrador.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/user.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/reporte.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/config.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/lista_clientes.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/lista_prestamos.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/lista_cobros.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/nueva_cliente.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/nuevo_prestamo.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/nuevo_cobro.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/editar_cliente.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/editar_prestamo.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/ver_cliente.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/ver_prestamo.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/buscar.php",
+      "status": 404,
+      "error": "Not Found"
+    },
+    {
+      "url": "/search.php",
+      "status": 404,
+      "error": "Not Found"
+    }
+  ],
+  "analisis": {}
+}
