@@ -47,41 +47,50 @@ class ConsultaOficialService {
     this.baseURL = process.env.VITE_CONSULTA_API_URL || 'https://api.consultadatos.do';
   }
 
-  /**
-   * Consulta datos por cédula en la JCE
+    /**
+   * Consultar cédula en el sistema local y JCE
    */
   async consultarCedula(cedula: string): Promise<DatosOficiales | null> {
     try {
-      // Limpiar y validar cédula
-      const cedulaLimpia = cedula.replace(/\D/g, '');
-      
-      if (cedulaLimpia.length !== 11) {
-        throw new Error('Cédula debe tener 11 dígitos');
+      // Primero intentar buscar en el sistema local
+      const datosLocales = await this.consultarCedulaLocal(cedula);
+      if (datosLocales) {
+        return datosLocales;
       }
 
-      // Por ahora simulamos la consulta con datos de ejemplo
-      // En producción, aquí se haría la llamada real a la API de la JCE
-      const datosFicticios = await this.simularConsultaJCE(cedulaLimpia);
-      
-      // TODO: Implementar llamada real a la API
-      /*
-      const response = await axios.post(`${this.baseURL}/jce/consultar`, {
-        cedula: cedulaLimpia,
-        apiKey: this.apiKey
-      }, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${this.apiKey}`
-        }
-      });
-
-      return response.data;
-      */
-
-      return datosFicticios;
+      // Si no se encuentra, simular consulta JCE
+      const response = await this.simularConsultaJCE(cedula);
+      return response;
     } catch (error) {
       console.error('Error consultando cédula:', error);
-      throw error;
+      return null;
+    }
+  }
+
+  /**
+   * Consultar cédula en el sistema local (base de datos anterior)
+   */
+  private async consultarCedulaLocal(cedula: string): Promise<DatosOficiales | null> {
+    try {
+      const response = await fetch(`/api/consulta-cedula-local/${cedula}`);
+      if (response.ok) {
+        const data = await response.json();
+        if (data.found) {
+          return {
+            cedula: data.cedula,
+            nombre: data.nombre.split(' ')[0] || '',
+            apellidos: data.nombre.split(' ').slice(1).join(' ') || '',
+            nombreCompleto: data.nombre,
+            telefono: data.telefono,
+            direccion: data.direccion,
+            estado: 'activo'
+          };
+        }
+      }
+      return null;
+    } catch (error) {
+      console.error('Error consultando sistema local:', error);
+      return null;
     }
   }
 

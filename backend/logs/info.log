@@ -127,3 +127,5 @@
 {"timestamp":"2025-10-05T18:15:53.747Z","level":"INFO","message":"MongoDB conectado exitosamente"}
 {"timestamp":"2025-10-05T18:19:28.555Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
 {"timestamp":"2025-10-05T18:19:28.582Z","level":"INFO","message":"MongoDB conectado exitosamente"}
+{"timestamp":"2025-10-05T23:24:16.517Z","level":"INFO","message":"Servidor corriendo en 0.0.0.0:5000","host":"0.0.0.0","port":"5000"}
+{"timestamp":"2025-10-05T23:24:16.539Z","level":"INFO","message":"MongoDB conectado exitosamente"}

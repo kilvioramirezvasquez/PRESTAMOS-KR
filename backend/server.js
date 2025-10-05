@@ -47,6 +47,7 @@ app.use('/api/estadisticas-migradas', require('./routes/estadisticas-migradas'))
 app.use('/api/diagnostico', require('./routes/diagnostico'));
 app.use('/api/usuarios', require('./routes/usuarios'));
 app.use('/api/reportes', require('./routes/reportes'));
+app.use('/api', require('./routes/consultaCedula'));
 
 // Middleware de manejo de errores (debe ir al final)
 app.use(errorHandler);

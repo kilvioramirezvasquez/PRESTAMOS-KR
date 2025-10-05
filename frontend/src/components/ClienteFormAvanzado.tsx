@@ -87,7 +87,7 @@ export default function ClienteFormAvanzado({ cliente, onSubmit, onCancel, isLoa
       switch (tipoDocumento) {
         case 'cedula':
           if (!consultaOficialService.validarCedula(documentoConsulta)) {
-            throw new Error('Formato de cédula inválido');
+            throw new Error('Formato de cédula inválido (debe tener 11 dígitos)');
           }
           datos = await consultaOficialService.consultarCedula(documentoConsulta);
           break;
